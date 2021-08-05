@@ -2,37 +2,74 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  background-color: rgb(245, 238, 238);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  background-color: rgb(250, 250, 246);
+  height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form__fieldset {
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.form__input {
+  margin: 5px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 3px;
+  outline: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form__button {
+  font-size: 15px;
+  border: 1px solid #000;
+  background-color: #e5ebf7;
+  width: 130px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.form__button:focus,
+.form__button:hover {
+  border: 1px solid rgb(127, 216, 127);
+  background-color: #f1f1f1;
+}
+.form__filterInput {
+  width: 350px;
+}
+.table {
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+.table__head {
+  text-align: left;
+  font-size: 18px;
+}
+.table__item {
+  height: 40px;
+}
+.table__button {
+  font-size: 15px;
+  border: 1px solid #000;
+  background-color: #eef1f7;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.table__button:focus,
+.table__button:hover {
+  border: 1px solid rgb(216, 127, 127);
+  background-color: #f7f4f4;
 }
